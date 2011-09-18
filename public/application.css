@@ -1,0 +1,64 @@
+body {
+  margin: 20px;
+  width: 700px;
+  background-image: url('/gradientfromtop.gif');
+  background-repeat:repeat-x;
+}
+
+div.marketer {
+  width: 300px;
+  height: 300px;
+  float: left;
+  padding: 0 20px;
+}
+
+div.embiggen {
+  height: 600px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 80px;
+  color: #d83da2;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+}
+
+h2.topic {
+  clear: both;
+  color: #d94301;
+}
+
+.klout-topics {
+  padding: 10px;
+}
+
+p.description {
+  text-align:justify;
+}
+
+p.tagline {
+  text-align: center;
+  font-size: 16px;
+}
+
+p.oversharer {
+  color: blue;
+}
+
+p.bragger {
+  color: green;
+}

@@ -1,0 +1,11 @@
+<h1><%= @shop['shop_name'] %></h1>
+<p class="description"><%= @shop['announcement'] %></p>
+<img src="<%= @shop['image_url_760x100'] %>" /><br /><br />
+<ul>
+  <% @listings.each do |listing| %>
+  <li>
+    <a href="/listing/<%= listing['listing_id'] %>"><%= listing['title'] %></a>
+    <div id="tags"><%= listing['tags'].join(', ') %></div>
+  </li>
+  <% end %>
+</ul>

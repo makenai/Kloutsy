@@ -1,0 +1,19 @@
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<h1><%= @listing['title'] %></h1>
+<p><%= @listing['description'] %></p>
+<center>
+<% @images.each do |image| %>
+<img src="<%= image['url_170x135'] %>" />
+<% end %>
+</center>
+<% @topics.keys.each do |tag| %>
+<h2 class="topic"><%= tag %></h2>
+<% @topics[ tag ].each do |user| %>
+<div class="marketer">
+  <iframe src="http://widgets.klout.com/badge/<%= user[:user] %>" style="border:0" scrolling="no" allowTransparency="true" frameBorder="0" width="200px" height="98px"></iframe>
+  <div class="klout-topics" data-user="<%= user[:user] %>"></div>
+  <p class="<%= user[:type] %>">"<%= user[:text] %>"</p>
+  <a href="#" data-user="<%= user[:user] %>" class="tweets">View Tweets</a>
+</div>
+<% end %>
+<% end %>
